@@ -14,8 +14,9 @@ import {
 
 // core components
 import AdNavBar from './AdNavBar';
+import AdCarousel from './AdCarousel';
 import LandPageHeader from './LandPageHeader';
-import DefaultFooter from 'components/Footers/DefaultFooter.js';
+import DarkFooter from './AdFooter';
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -317,6 +318,11 @@ function LandingPage() {
             </div>
           </Container>
         </div>
+        <div className="section text-center">
+          <Container>
+            <AdCarousel />
+          </Container>
+        </div>
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>
@@ -382,7 +388,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );

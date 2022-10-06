@@ -69,21 +69,21 @@ function ExamplesNavbar() {
                 Dropdown header
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Action
+                Home
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Another action
+                About0-Us
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Something else here
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Separated link
+                Our Drinks
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                One more separated link
+                Contact
+              </DropdownItem>
+              <DropdownItem divider></DropdownItem>
+              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                FAQ
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
