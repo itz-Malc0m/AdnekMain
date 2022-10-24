@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // reactstrap components
 import {
   Button,
@@ -14,8 +14,8 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Row
-} from "reactstrap";
+  Row,
+} from 'reactstrap';
 
 // core components
 
@@ -28,10 +28,10 @@ function SignUp() {
       <div
         className="section section-signup"
         style={{
-          backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-          minHeight: "700px"
+          backgroundImage: 'url(' + require('assets/img/bg11.jpg') + ')',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center',
+          minHeight: '700px',
         }}
       >
         <Container>
@@ -73,7 +73,7 @@ function SignUp() {
                 <CardBody>
                   <InputGroup
                     className={
-                      "no-border" + (firstFocus ? " input-group-focus" : "")
+                      'no-border' + (firstFocus ? ' input-group-focus' : '')
                     }
                   >
                     <InputGroupAddon addonType="prepend">
@@ -90,7 +90,7 @@ function SignUp() {
                   </InputGroup>
                   <InputGroup
                     className={
-                      "no-border" + (lastFocus ? " input-group-focus" : "")
+                      'no-border' + (lastFocus ? ' input-group-focus' : '')
                     }
                   >
                     <InputGroupAddon addonType="prepend">
@@ -107,7 +107,7 @@ function SignUp() {
                   </InputGroup>
                   <InputGroup
                     className={
-                      "no-border" + (emailFocus ? " input-group-focus" : "")
+                      'no-border' + (emailFocus ? ' input-group-focus' : '')
                     }
                   >
                     <InputGroupAddon addonType="prepend">
@@ -126,7 +126,7 @@ function SignUp() {
                 <CardFooter className="text-center">
                   <Button
                     className="btn-neutral btn-round"
-                    color="info"
+                    color="warning"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"

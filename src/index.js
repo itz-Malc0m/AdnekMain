@@ -27,8 +27,10 @@ import 'assets/demo/nucleo-icons-page-styles.css?v=1.5.0';
 // pages for this kit
 // import Index from 'views/Index.js';
 import NucleoIcons from 'views/NucleoIcons.js';
-import LoginPage from 'views/examples/LoginPage.js';
+// import LoginPage from 'views/examples/LoginPage.js';
 import LandPage from './adnek/LandPage';
+import AdProfilePage from './adnek/AdProfilePage';
+import About from 'adnek/subs/About';
 import ProfilePage from 'views/examples/ProfilePage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -47,13 +49,14 @@ root.render(
           render={(props) => <LandPage {...props} />}
         />
         <Route
+          path="/login-page"
+          render={(props) => <AdProfilePage {...props} />}
+        />
+        <Route
           path="/profile-page"
           render={(props) => <ProfilePage {...props} />}
         />
-        <Route
-          path="/login-page"
-          render={(props) => <LoginPage {...props} />}
-        />
+        <Route path="/about-page" render={(props) => <About {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>

@@ -49,7 +49,11 @@ function ExamplesNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={'fixed-top ' + navbarColor} color="info" expand="lg">
+      <Navbar
+        className={'fixed-top ' + navbarColor}
+        color="warning"
+        expand="lg"
+      >
         <Container>
           <UncontrolledDropdown className="button-dropdown">
             <DropdownToggle
@@ -96,7 +100,7 @@ function ExamplesNavbar() {
               ADNEK• FOOD & BEVERAGES
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Coded by DANNY
+              ADNEK•
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -119,26 +123,26 @@ function ExamplesNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Home
+                <NavLink to="/about-page" tag={Link}>
+                  About
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Help?
-                </NavLink>
+                <NavLink href="#">Our Brands</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
+                <NavLink href="#">Sustainability</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">News Feeds</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" target="_blank" id="twitter-tooltip">
                   <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <p className="d-lg-none d-xl-none">Sustainability</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                  Read on our approach toward a Sustainabile system.
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -148,10 +152,10 @@ function ExamplesNavbar() {
                   id="facebook-tooltip"
                 >
                   <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  <p className="d-lg-none d-xl-none">Careers</p>
                 </NavLink>
                 <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                  Like us on Facebook to get feeds on Careers.
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -161,10 +165,10 @@ function ExamplesNavbar() {
                   id="instagram-tooltip"
                 >
                   <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <p className="d-lg-none d-xl-none">Contact</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Contact us an get to know more..
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>

@@ -16,7 +16,7 @@ import {
 
 // core components
 import ExamplesNavbar from 'components/Navbars/ExamplesNavbar.js';
-import ProfilePageHeader from 'components/Headers/ProfilePageHeader.js';
+import AdProfileHeader from './AdProfileHeader.js';
 import DefaultFooter from 'components/Footers/DefaultFooter.js';
 
 function ProfilePage() {
@@ -36,7 +36,7 @@ function ProfilePage() {
     <>
       <ExamplesNavbar />
       <div className="wrapper">
-        <ProfilePageHeader />
+        <AdProfileHeader />
         <div className="section">
           <Container>
             <div className="button-container">
@@ -67,7 +67,7 @@ function ProfilePage() {
               </UncontrolledTooltip>
             </div>
             <h3 className="title">About me</h3>
-            <h5 className=".profile-container description">
+            <h5 className="description">
               An artist of considerable range, Ryan — the name taken by
               Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
               and records all of his own music, giving it a warm, intimate feel

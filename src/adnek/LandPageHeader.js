@@ -37,7 +37,7 @@ function LandingPageHeader() {
             <div className="text-center">
               <Button
                 className="btn-icon btn-round"
-                color="info"
+                color="warning"
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
@@ -45,7 +45,7 @@ function LandingPageHeader() {
               </Button>
               <Button
                 className="btn-icon btn-round"
-                color="info"
+                color="warning"
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
@@ -53,7 +53,7 @@ function LandingPageHeader() {
               </Button>
               <Button
                 className="btn-icon btn-round"
-                color="info"
+                color="warning"
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >

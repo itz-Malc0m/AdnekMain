@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // reactstrap components
 import {
@@ -37,16 +38,16 @@ function LandingPage() {
       <AdNavBar />
       <div className="wrapper">
         <LandPageHeader />
-        <div className="section section-about-us">
-          <Container>
+        <div className="section section-about-us" data-background-color="black">
+          <Container className="profile-container">
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Who we are?</h2>
                 <h5 className="description">
                   Adnek Food & Beverages is a company based in Abuja,Nigeria,
                   dedicated to import and bringing the best and most premium
-                  products to our region and the rest of Africa, all selected by
-                  our experts that understand our clients needs and the latest
+                  products to our region and the rest of Africa, selected by our
+                  experts that understand our clients needs and the latest
                   trends...
                 </h5>
               </Col>
@@ -62,10 +63,18 @@ function LandingPage() {
                         'url(' + require('assets/img/3-Bottle.png') + ')',
                     }}
                   >
-                    <p className="blockquote blockquote-info">
+                    {/* <p className="blockquote blockquote-info warning">
                       "We envision to become the most successful, respected and
                       trusted patners in the region, offering the best service
                       and brands to our clients" <br></br>
+                      <br></br>
+                      <small>-ADNEK_NG</small>
+                    </p> */}
+                    <p className="blockquote blockquote-info warning">
+                      " We're Building our heritage in the region of Africa as
+                      the best. We delivery an outstanding choice of selection
+                      from the world most award winners of the Best Only."{' '}
+                      <br></br>
                       <br></br>
                       <small>-ADNEK_NG</small>
                     </p>
@@ -90,29 +99,30 @@ function LandingPage() {
                   ></div>
                   <h2 className="title">OUR CORE VALUES</h2>
                   <h3>
-                    <span style={{ color: 'aqua', fontStyle: 'bold' }}>A</span>
+                    <span style={{ color: 'gold', fontStyle: 'bold' }}>A</span>
                     SSERTIVENESS
                   </h3>
                   <h3>
-                    <span style={{ color: 'aqua', fontStyle: 'bold' }}>D</span>
+                    <span style={{ color: 'gold', fontStyle: 'bold' }}>D</span>
                     EDICATION
                   </h3>
                   <h3>
-                    <span style={{ color: 'aqua', fontStyle: 'bold' }}>N</span>
+                    <span style={{ color: 'gold', fontStyle: 'bold' }}>N</span>
                     EAT
                   </h3>
                   <h3>
-                    <span style={{ color: 'aqua', fontStyle: 'bold' }}>E</span>
+                    <span style={{ color: 'gold', fontStyle: 'bold' }}>E</span>
                     XCELLENCE
                   </h3>
                   <h3>
-                    <span style={{ color: 'aqua', fontStyle: 'bold' }}>K</span>
+                    <span style={{ color: 'gold', fontStyle: 'bold' }}>K</span>
                     NOWLEDGE
                   </h3>
                   <h3>
                     We are here to set the new record for the highest level of
                     accolades for the premium services accross the region of
-                    Africa
+                    Africa. Our ambition is to turn every social interaction
+                    into a genuine and friendly experience of sharing
                   </h3>
                   <p>
                     The Arctic Ocean freezes every winter and much of the
@@ -125,13 +135,14 @@ function LandingPage() {
                     ice.
                   </p>
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                    As we create and share our Pernod Ricard products we become
+                    immersed in this extraordinary human experience of
+                    convivialité. We are respectful and responsible hosts,
+                    committed to nurturing every terroir and its biodiversity.
+                    Our people add a human touch to our products with their own
+                    personality and passion. Our beverages travel the world
+                    because, although they are born in different lands and
+                    cultures, they are made to be shared
                   </p>
                   <p>
                     The Arctic Ocean freezes every winter and much of the
@@ -148,7 +159,10 @@ function LandingPage() {
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        <div
+          className="section section-team text-center"
+          data-background-color="black"
+        >
           <Container>
             <h2 className="title">Here are our patners</h2>
             <div className="team">
@@ -160,28 +174,34 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require('assets/img/dublin.jpg')}
                     ></img>
+
                     <h4 className="title">Dublin City Spirits</h4>
                     <p className="category text-info">Irish Liquor</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{' '}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <a
+                        href="http://dublincityspirits.ng/"
+                        // onClick={(e) => e.preventDefault()}
+                      >
                         links
                       </a>{' '}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      to="/login-page"
+                      tag={Link}
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -189,7 +209,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -218,7 +238,7 @@ function LandingPage() {
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -226,7 +246,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -254,7 +274,7 @@ function LandingPage() {
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -262,7 +282,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -270,7 +290,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -298,7 +318,7 @@ function LandingPage() {
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -306,7 +326,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="warning"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -318,12 +338,15 @@ function LandingPage() {
             </div>
           </Container>
         </div>
-        <div className="section text-center">
+        <div className="section text-center" data-background-color="black">
           <Container>
             <AdCarousel />
           </Container>
         </div>
-        <div className="section section-contact-us text-center">
+        <div
+          className="section section-contact-us text-center"
+          data-background-color="black"
+        >
           <Container>
             <h2 className="title">Want to work with us?</h2>
             <p className="description">Your project is very important to us.</p>
@@ -376,7 +399,7 @@ function LandingPage() {
                   <Button
                     block
                     className="btn-round"
-                    color="info"
+                    color="warning"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"
